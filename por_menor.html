@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="por_menor.css">
+</head>
+<body>
+    <!-- FORMULARIO POR MENOR -->
+    <section class="form-menor-seccion">
+        <h2>🛒 Pedido por Menor</h2>
+        <p>Compra personal · Entrega rápida · Atención inmediata</p>
+        <form class="form-menor" id="formMenor">
+            <div class="fila-menor">
+                <div class="campo-menor">
+                    <label>👤 Nombre Completo *</label>
+                    <input type="text" required placeholder="Tu nombre y apellido">
+                </div>
+                <div class="campo-menor">
+                    <label>📱 Teléfono / WhatsApp *</label>
+                    <input type="tel" required placeholder="Ej: 987 654 321">
+                </div>
+            </div>
+            <div class="fila-menor">
+                <div class="campo-menor">
+                    <label>📍 Distrito *</label>
+                    <input type="text" required placeholder="Ej: Los Olivos, Lima">
+                </div>
+                <div class="campo-menor">
+                    <label>🏠 Dirección *</label>
+                    <input type="text" required placeholder="Calle y número">
+                </div>
+            </div>
+            <div class="campo-menor">
+                <label>🛍️ Productos que deseas *</label>
+                <textarea rows="4" required placeholder="Nombre del producto y cantidad..."></textarea>
+            </div>
+            <div class="fila-menor">
+                <div class="campo-menor">
+                    <label>💳 Método de pago</label>
+                    <select>
+                        <option>Yape</option>
+                        <option>Plin</option>
+                        <option>Transferencia</option>
+                        <option>Contra entrega</option>
+                    </select>
+                </div>
+                <div class="campo-menor">
+                    <label>⚡ Tipo de entrega</label>
+                    <select>
+                        <option>Envío a domicilio</option>
+                        <option>Recojo en tienda</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn-menor">📤 Enviar Pedido</button>
+            <div class="exito-menor" id="exitoMenor" style="display:none; color:green; margin-top:1rem;">✅ ¡Pedido enviado!</div>
+        </form>
+    </section>
+    <script src="por_menor.js"></script>
+</body>
+</html>

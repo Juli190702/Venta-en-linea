@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta en Línea ✨</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+    <!-- ==================================
+        CHATBOT FLOTANTE
+    ================================== -->
+    <div class="chat-burbuja" id="chatBurbuja">
+        <button class="boton-chat" id="botonChat" aria-label="Abrir chat">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <div class="ventana-chat" id="ventanaChat">
+            <div class="cabecera-chat">
+                <h4>💬 Atención al Cliente</h4>
+                <button class="cerrar-chat" id="cerrarChat" aria-label="Cerrar chat">×</button>
+            </div>
+
+            <div class="cuerpo-chat" id="cuerpoChat">
+                <div class="mensaje bot">
+                    <p>¡Hola! 👋 Bienvenido a <strong>Venta en Línea</strong> 🛍️</p>
+                    <p>¿En qué te podemos ayudar hoy?</p>
+                </div>
+            </div>
+
+            <div class="opciones-chat">
+                <button class="opcion" data-respuesta="Quiero información sobre productos">📦 Productos</button>
+                <button class="opcion" data-respuesta="Tengo una duda sobre envíos">🚚 Envíos</button>
+                <button class="opcion" data-respuesta="Necesito factura">📄 Facturación</button>
+                <button class="opcion" data-respuesta="Quiero hablar con una persona">💬 Hablar con nosotros</button>
+            </div>
+
+            <div class="entrada-chat">
+                <input type="text" id="entradaMensaje" placeholder="Escribe tu mensaje...">
+                <button id="enviarMensaje" aria-label="Enviar">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+  
+<body>
+    <div class="fondo-animado"></div>
+
+    <header class="cabecera">
+        <div class="contenedor-logo">
+            <h1 class="titulo-principal">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Venta en Línea</span>
+            </h1>
+            <button class="boton-menu" id="botonMenu" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <nav class="menu-principal" id="menuPrincipal">
+            <ul class="lista-menu">
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#quienes"><i class="fas fa-users"></i> Quiénes Somos</a></li>
+                <li class="tiene-submenu">
+                    <a href="#productos" class="enlace-submenu">
+                        <i class="fas fa-laptop"></i> Productos <i class="fas fa-chevron-down flecha"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Laptops</a></li>
+                        <li><a href="#"><i class="fas fa-tablet-alt"></i> Tablets</a></li>
+                        <li><a href="#"><i class="fas fa-microchip"></i> Equipos / CPU</a></li>
+                    </ul>
+                </li>
+                <li class="tiene-submenu">
+                    <a href="#pedidos" class="enlace-submenu">
+                        <i class="fas fa-box"></i> Pedidos <i class="fas fa-chevron-down flecha"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="por_mayor.html"><i class="fas fa-layer-group"></i> Por Mayor</a></li>
+                        <li><a href="por_menor.html"><i class="fas fa-shopping-bag"></i> Por Menor</a></li>
+                        <li><a href="por_unidad.html"><i class="fas fa-cubes"></i> Por Unidades</a></li>                        
+                    </ul>
+                </li>
+                <li class="tiene-submenu">
+                    <a href="#sucursales" class="enlace-submenu">
+                        <i class="fas fa-map-marker-alt"></i> Sucursales <i class="fas fa-chevron-down flecha"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="#"><i class="fas fa-landmark"></i> Lima</a></li>
+                        <li><a href="#"><i class="fas fa-ship"></i> Callao</a></li>
+                        <li><a href="#"><i class="fas fa-sun"></i> Chiclayo</a></li>
+                        <li><a href="#"><i class="fas fa-leaf"></i> Tarapoto</a></li>
+                        <li><a href="#"><i class="fas fa-mountain"></i> Cajamarca</a></li>
+                        <li><a href="#"><i class="fas fa-city"></i> Huancayo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal" id="inicio">
+        <section class="portada">
+            <div class="contenido-portada">
+                <h2 class="titulo-portada">Tecnología al alcance de todos 🚀</h2>
+                <p class="subtitulo-portada">Soluciones digitales, equipos y servicios para ti y tu negocio</p>
+                <a href="#productos-destacados" class="boton-primario">
+                    Explorar <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <div class="contenedor-tarjetas" id="productos-destacados">
+            <article class="tarjeta">
+                <div class="capa-imagen">
+                    <img src="Fotos/images1.jpg" alt="Inteligencia Artificial" loading="lazy">
+                    <div class="efecto-imagen"></div>
+                </div>
+                <div class="contenido-tarjeta">
+                    <span class="etiqueta">Innovación</span>
+                    <h2><i class="fas fa-robot"></i> Inteligencia Artificial</h2>
+                    <p>Automatiza procesos, ahorra tiempo y lleva tu negocio al siguiente nivel con herramientas inteligentes diseñadas para crecer contigo.</p>
+                    <a href="#" class="boton-ver-mas">
+                        Conocer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <div class="capa-imagen">
+                    <img src="Fotos/images3.jpg" alt="Redes Sociales" loading="lazy">
+                    <div class="efecto-imagen"></div>
+                </div>
+                <div class="contenido-tarjeta">
+                    <span class="etiqueta">Conectividad</span>
+                    <h2><i class="fas fa-share-alt"></i> Redes Sociales</h2>
+                    <p>Haz crecer tu marca, conecta con miles de clientes y convierte seguidores en ventas con estrategias digitales a tu medida.</p>
+                    <a href="#" class="boton-ver-mas">
+                        Conocer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <div class="capa-imagen">
+                    <img src="Fotos/images2.jpg" alt="Servicios de Hosting" loading="lazy">
+                    <div class="efecto-imagen"></div>
+                </div>
+                <div class="contenido-tarjeta">
+                    <span class="etiqueta">Infraestructura</span>
+                    <h2><i class="fas fa-server"></i> Hosting y Ventas</h2>
+                    <p>Tu sitio siempre disponible, rápido y seguro. Planes flexibles con soporte dedicado para que tu negocio nunca se detenga.</p>
+                    <a href="#" class="boton-ver-mas">
+                        Conocer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+        </main>
+
+    <!-- ==================================
+           SECCIÓN FINAL COMPLETA
+         ================================== -->
+    <footer class="pie-pagina-completo">
+        <div class="contenedor-pie">
+            <!-- Bloque 1: Marca y bienvenida -->
+             <!-- Código QR de tu página -->
+            <div style="text-align: center; padding: 2rem; background: rgba(99, 102, 241, 0.05); border-radius: 16px; margin: 2rem 0;">
+                <h3 style="color: #6366f1; margin-bottom: 1rem;">📱 Escanea para visitarnos</h3>
+                <div id="codigo-qr-fijo" style="display: inline-block; padding: 1rem; background: white; border-radius: 12px;"></div>
+                <p style="margin-top: 1rem; color: #64748b; font-size: 0.9rem;">Comparte tu página fácilmente</p>
+            </div>
+
+            <script>
+            (function(){
+                // Tu dirección fija — cámbiala por la tuya
+                const miEnlace = "http://127.0.0.7:5501/index.html"; 
+                // Ejm: "https://nombreusuario.github.io/mi-sitio/"
+
+                const contenedor = document.getElementById("codigo-qr-fijo");
+                if (!contenedor) return;
+
+                // Generamos QR con servicio directo, sin librerías
+                contenedor.innerHTML = 
+                    `<img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&color=6366f1&data=${encodeURIComponent(miEnlace)}" 
+                    alt="Código QR" style="display:block; width:180px; height:180px;">`;
+            })();
+            </script>
+            <div class="bloque-pie marca">
+                <h3 class="titulo-marca">
+                    <i class="fas fa-shopping-cart"></i> Venta en Línea
+                </h3>
+                <p>Tu tienda de confianza en tecnología, equipos y servicios digitales. Calidad, garantía y el mejor precio del mercado.</p>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://x.com/" target="_blank" aria-label="X"><b style="font-weight:bold; font-size:18px;">X</b></a>
+                    <a href="https://t.me/" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://www.linkedin.com/company" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.twitch.tv/" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+                </div>
+            </div>
+
+            <!-- Bloque 2: Enlaces rápidos -->
+            <div class="bloque-pie enlaces">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">• Inicio</a></li>
+                    <li><a href="#quienes">• Quiénes Somos</a></li>
+                    <li><a href="#productos-destacados">• Productos</a></li>
+                    <li><a href="#">• Catálogo Completo</a></li>
+                    <li><a href="#">• Promociones</a></li>
+                </ul>
+            </div>
+
+            <!-- Bloque 3: Atención al cliente -->
+            <div class="bloque-pie atencion">
+                <h4>Atención al Cliente</h4>
+                <ul>
+                    <li><i class="fas fa-headset"></i> Soporte Técnico</li>
+                    <li><i class="fas fa-question-circle"></i> Preguntas Frecuentes</li>
+                    <li><i class="fas fa-file-invoice"></i> Facturación Electrónica</li>
+                    <li><i class="fas fa-shipping-fast"></i> Envíos y Entregas</li>
+                    <li><i class="fas fa-undo"></i> Cambios y Devoluciones</li>
+                </ul>
+            </div>
+
+            <!-- Bloque 4: Contacto y Ubicación -->
+            <div class="bloque-pie contacto">
+                <h4>Contáctanos</h4>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Av. Tecnología 123, Lima - Perú</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+51 987 654 321</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>ventas@ventaenlinea.pe</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Lun - Sáb: 9:00 a 19:00 hrs</span>
+                    </li>
+                </ul>
+            </div>
+          
+
+        </div>
+
+        <!-- Franja inferior con derechos -->
+        <div class="franja-inferior">
+            <div class="contenedor-franja">
+                <p>&copy; 2026 <strong>Venta en Línea</strong> — Todos los Derechos Reservados 💙 | RUC: 12345678901</p>
+                <div class="enlaces-legales">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Libro de Reclamaciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+ 

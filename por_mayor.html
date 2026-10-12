@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="por_mayor.css">
+</head>
+<body>
+    <section class="form-mayor-seccion">
+        <h2>📦 Pedido por Mayor</h2>
+        <p>Cantidades al por mayor · Precios especiales · Descuentos por volumen</p>
+        <form class="form-mayor" id="formMayor">
+            <div class="fila-mayor">
+                <div class="campo-mayor">
+                    <label>👤 Razón Social / Nombre *</label>
+                    <input type="text" required placeholder="Tu empresa o nombre completo">
+                </div>
+                <div class="campo-mayor">
+                    <label>📱 Teléfono / WhatsApp *</label>
+                    <input type="tel" required placeholder="Ej: 987 654 321">
+                </div>
+            </div>
+            <div class="fila-mayor">
+                <div class="campo-mayor">
+                    <label>🪪 RUC / DNI *</label>
+                    <input type="text" required placeholder="Documento para facturación">
+                </div>
+                <div class="campo-mayor">
+                    <label>✉️ Correo</label>
+                    <input type="email" placeholder="tu@correo.com">
+                </div>
+            </div>
+            <div class="campo-mayor">
+                <label>📍 Dirección de entrega *</label>
+                <input type="text" required placeholder="Calle, número, distrito, ciudad">
+            </div>
+            <div class="campo-mayor">
+                <label>📦 Productos y cantidades *</label>
+                <textarea rows="5" required placeholder="Producto 1 — 50 unidades&#10;Producto 2 — 10 cajas"></textarea>
+            </div>
+            <div class="fila-mayor">
+                <div class="campo-mayor">
+                    <label>💰 Volumen estimado</label>
+                    <select>
+                        <option>Menos de 100 unidades</option>
+                        <option>100 a 500 unidades</option>
+                        <option>500 a 1,000 unidades</option>
+                        <option>Más de 1,000 unidades</option>
+                    </select>
+                </div>
+                <div class="campo-mayor">
+                    <label>📅 Fecha deseada</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="campo-mayor">
+                <label>📝 Observaciones</label>
+                <textarea rows="3" placeholder="Condiciones de pago, colores, tallas..."></textarea>
+            </div>
+            <button type="submit" class="btn-mayor">📤 Enviar Pedido</button>
+            <div class="exito-mayor" id="exitoMayor" style="display:none; color:green; margin-top:1rem;">✅ ¡Pedido enviado!</div>
+        </form>
+    </section>
+    <script src="por_mayor.js"></script>
+</body>
+</html>

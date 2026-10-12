@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="por_unidad.css">
+</head>
+<body>
+   <!-- FORMULARIO POR UNIDADES -->
+    <section class="form-unidades-seccion">
+        <h2>🔢 Pedido por Unidades</h2>
+        <p>Especifica exactamente cuántas de cada producto necesitas</p>
+        <form class="form-unidades" id="formUnidades">
+            <div class="fila-unidades">
+                <div class="campo-unidades">
+                    <label>👤 Nombre *</label>
+                    <input type="text" required placeholder="Tu nombre completo">
+                </div>
+                <div class="campo-unidades">
+                    <label>📱 WhatsApp *</label>
+                    <input type="tel" required placeholder="Tu número">
+                </div>
+            </div>
+            <div class="campo-unidades">
+                <label>📋 Detalle por Unidades *</label>
+                <textarea rows="6" required placeholder="Producto — Cantidad&#10;Camisa roja — 2 unidades&#10;Pantalón azul — 3 unidades"></textarea>
+            </div>
+            <div class="fila-unidades">
+                <div class="campo-unidades">
+                    <label>📍 Lugar de entrega *</label>
+                    <input type="text" required placeholder="Dirección completa">
+                </div>
+                <div class="campo-unidades">
+                    <label>📅 Fecha o día</label>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="campo-unidades">
+                <label>📝 Detalles adicionales</label>
+                <textarea rows="3" placeholder="Tallas, colores, referencias..."></textarea>
+            </div>
+            <button type="submit" class="btn-unidades">📤 Enviar Pedido</button>
+            <div class="exito-unidades" id="exitoUnidades" style="display:none; color:green; margin-top:1rem;">✅ ¡Pedido enviado!</div>
+        </form>
+    </section> 
+    <script src="por_unidad.js"></script>
+</body>
+</html>
